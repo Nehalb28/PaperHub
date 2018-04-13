@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">PaperHubs</string>
+    <string name="hint_name">Company Name</string>
+    <string name="hint_email">Company Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_entityquery">Search City</string>
+    <string name="hint_price">Price per kg</string>
+    <string name="hint_price2">Price</string>
+    <string name="hint_phone">Mobile Number</string>
+    <string name="hint_gstin">Gst Number</string>
+    <string name="hint_location">City</string>
+    <string name="hint_confirmpassword">Confirm Password</string>
+    <string name="hint_tvpasswordchange">Please enter new password below:</string>
+    <string name="hint_address">Shipping Address</string>
+    <string name="hint_Ques1">What is your favourite sport?</string>
+    <string name="hint_Ques2">Which is your favourite car?</string>
+    <string name="hint_SecurityQuestions">SECURITY QUESTIONS</string>
+    <string name="hint_gsmRange">Select GSM Range:</string>
+    <string name="hint_gsm">Gsm</string>
+    <string name="hint_gsm_text">GSM Range</string>
+    <string name="hint_finalorder">Review Order Details</string>
+    <string name="hint_width">Width (cm)</string>
+    <string name="hint_diameter">Diameter (cm) (if applicable)</string>
+    <string name="hint_diameter2">Diameter (cm)</string>
+    <string name="hint_quantity">Reels</string>
+    <string name="hint_taxable_amount">Taxable Amount</string>
+    <string name="hint_gst">GST @ 12%</string>
+    <string name="hint_totalamount">Total Amount</string>
+    <string name="hint_to"> - </string>
+    <string name="hint_BF">Selected BF</string>
+    <string name="hint_BF2">BF</string>
+    <string name="hint_orderid">Order ID</string>
+    <string name="hint_bf_price">Select Burst Factor that apply and enter prices Ex-Works (EXW)</string>
+    <string name="hint_14BF">14 BF</string>
+    <string name="hint_16BF">16 BF</string>
+    <string name="hint_18BF">18 BF</string>
+    <string name="hint_20BF">20 BF</string>
+    <string name="hint_22BF">22 BF</string>
+    <!--<string name="hint_24BF">24 BF</string>-->
+    <string name="hint_25BF">25 BF</string>
+    <!--<string name="hint_26BF">26 BF</string>-->
+    <string name="hint_28BF">28 BF</string>
+    <string name="hint_30BF">30 BF</string>
+    <string name="hint_32BF">32 BF</string>
+    <!--<string name="hint_34BF">34 BF</string>-->
+    <string name="hint_35BF">35 BF</string>
+    <string name="terms_conditions">By clicking Register you agree all the
+                "<a href='https://www.alpanahotels.com'>terms and conditions.</a>"</string>
+    <string name="button_register">Register</string>
+    <string name="button_next">Next</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_bank">Update Bank Details</string>
+    <string name="button_search">Search</string>
+    <string name="button_login">Login</string>
+    <string name="button_register_loginactivity">Create Account</string>
+    <string name="button_logout">Logout</string>
+    <string name="button_order">Place Order</string>
+    <string name="tv_registerhere">Not Listed Yet?</string>
+    <string name="show_pwd">Show Password</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="forgot_password_emailid">Please enter your Registered Email Id below:</string>
+    <string name="price">Price</string>
+    <string name="INR">INR</string>
+    <string name="rb_button1">Paper Manufacturer</string>
+    <string name="rb_button2">Converter</string>
+    <string name="rb_button3">Other</string>
+    <string name="text_home">Listings</string>
+    <string name="text_feedback">Feedback</string>
+    <string name="text_feedbacktype">Feedback Type</string>
+    <string name="text_share">Share</string>
+    <string name="text_rateus">Rate Us</string>
+    <string name="text_contactus">Contact Us</string>
+    <string name="text_purchase_orders">Purchase</string>
+    <string name="text_sale_orders">Sales</string>
+    <string name="text_more">More</string>
+    <string name="text_profile">Profile</string>
+    <string name="text_settings">Settings</string>
+    <string name="text_min_gsm">Min GSM</string>
+    <string name="text_max_gsm">Max GSM</string>
+    <string name="text_sale_company">Seller</string>
+    <string name="text_insurance">Insurance (%)</string>
+    <string name="text_insurance2">Insurance</string>
+    <string name="text_credit_days">Credit Days</string>
+    <string name="text_credit_days_text">Please enter payment terms / period (if applicable):</string>
+    <string name="text_netamount">Net Amount</string>
+    <string name="text_orderstatus">Order Status</string>
+    <string name="text_confirm">Confirm Order</string>
+    <string name="text_freight">Freight Charges (Optional)</string>
+    <string name="text_delivery">Estimated Delivery Days (Optional)</string>
+    <string name="text_bankdetails">Please provide bank details for customer payment (Optional)</string>
+    <string name="text_bank_account_name">Account Name</string>
+    <string name="text_bankname">Bank Name</string>
+    <string name="text_bank_account_number">Bank Account Number</string>
+    <string name="text_bank_ifsc">IFS Code</string>
+    <string name="text_insurance_text">Please enter insurance percent (if applicable) on taxable amount</string>
+    <string name="text_bf">Please select Burst Factor to order</string>
+    <string name="text_cb_1">1</string>
+    <string name="text_cb_2">2</string>
+    <string name="text_cb_3">3</string>
+    <string name="text_cb_4">4</string>
+    <string name="text_cb_5">5</string>
+    <string name="text_cb_6">6</string>
+    <string name="text_cb_7">7</string>
+    <string name="text_cb_8">8</string>
+    <string name="text_cb_9">9</string>
+    <string name="text_cb_10">10</string>
+    <string name="gsm_prompt">Choose GSM from range</string>
+    <string-array name="credit_days_list">
+        <item>0</item>
+        <item>7</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>75</item>
+        <item>90</item>
+    </string-array>
+
+    <string-array name="gsm_list">
+        <item>0</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>100</item>
+        <item>120</item>
+        <item>140</item>
+        <item>160</item>
+        <item>180</item>
+        <item>200</item>
+        <item>220</item>
+        <item>240</item>
+        <item>260</item>
+        <item>280</item>
+        <item>300</item>
+        <item>320</item>
+    </string-array>
+    <string-array name="feedback_list">
+        <item>Enhancment Request</item>
+        <item>Bug Report</item>
+        <item>Design / Ease of use</item>
+        <item>Connectivity</item>
+        <item>Efficiency</item>
+        <item>Workflow</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="bankname_list">
+        <item>Select Bank</item>
+        <item>Allahabad Bank</item>
+        <item>Andhra Bank</item>
+        <item>Axis Bank</item>
+        <item>Bandhan Bank</item>
+        <item>Bank Of Baroda</item>
+        <item>Bank Of India</item>
+        <item>Catholic Syrian Bank</item>
+        <item>Canara Bank</item>
+        <item>Central Bank Of India</item>
+        <item>City Union Bank</item>
+        <item>Corporation Bank</item>
+        <item>DCB Bank</item>
+        <item>Dena Bank</item>
+        <item>Dhanlaxmi Bank</item>
+        <item>Federal Bank</item>
+        <item>HDFC Bank</item>
+        <item>ICICI Bank</item>
+        <item>IDFC Bank</item>
+        <item>IndusInd Bank</item>
+        <item>Indian Bank</item>
+        <item>Indian Overseas Bank</item>
+        <item>IDBI Bank</item>
+        <item>Jammu and Kashmir Bank</item>
+        <item>Karnataka Bank</item>
+        <item>Karur Vysya Bank</item>
+        <item>Kotak Mahindra Bank</item>
+        <item>Lakshmi Vilas Bank</item>
+        <item>Nainital Bank</item>
+        <item>Oriental Bank Of Commerce</item>
+        <item>Punjab And Sind Bank</item>
+        <item>Punjab National Bank</item>
+        <item>RBL Bank</item>
+        <item>South Indian Bank</item>
+        <item>State Bank Of India</item>
+        <item>Syndicate Bank</item>
+        <item>Tamilnad Mercantile Bank Limited</item>
+        <item>UCO Bank</item>
+        <item>Union Bank Of India</item>
+        <item>United Bank Of India</item>
+        <item>Vijaya Bank</item>
+        <item>Yes Bank</item>
+    </string-array>
+</resources>

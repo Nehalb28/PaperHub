@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.procnect">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCKWfxLcF3KycLxgBmdg9JcWYB7Bxs-b4c" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity android:name="com.example.android.procnect.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.android.procnect.LoginActivity"
+            android:launchMode="singleTop">
+
+        <intent-filter android:label="@string/app_name" android:autoVerify="true">
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="http"
+                android:host="www.paperhubs.com" />
+        </intent-filter>
+
+            <intent-filter android:label="@string/app_name" android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https"
+                    android:host="www.paperhubs.com" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name="com.example.android.procnect.QueryEntityActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name="com.example.android.procnect.RegisterActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.LoginActivity" />
+        <activity android:name="com.example.android.procnect.RecyclerViewActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.QueryEntityActivity"/>
+        <activity android:name="com.example.android.procnect.BusinessSelectedActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.RecyclerViewActivity"/>
+        <activity android:name="com.example.android.procnect.OrderActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.BusinessSelectedActivity"/>
+        <activity android:name="com.example.android.procnect.ProfileActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.MoreActivity"/>
+        <activity android:name="com.example.android.procnect.BusinessSettingsActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.QueryEntityActivity"/>
+        <activity android:name="com.example.android.procnect.BusinessSettingsActivityNext"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.BusinessSettingsActivity"/>
+        <activity android:name="com.example.android.procnect.ForgotPassword"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.LoginActivity"/>
+        <activity android:name="com.example.android.procnect.PasswordChangeActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.ForgotPassword"/>
+        <activity android:name="com.example.android.procnect.MoreActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.QueryEntityActivity"/>
+        <activity android:name="com.example.android.procnect.FeedbackActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.MoreActivity"/>
+        <activity android:name="com.example.android.procnect.FinalizeOrderActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.OrderActivity"/>
+        <activity android:name="com.example.android.procnect.OrderSummaryActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.QueryEntityActivity"/>
+        <activity android:name="com.example.android.procnect.OrderDetailsActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.OrderSummaryActivity"/>
+        <activity android:name="com.example.android.procnect.ConfirmOrderActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.OrderDetailsActivity"/>
+        <activity android:name="com.example.android.procnect.SalesOrderSummaryActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.QueryEntityActivity"/>
+        <activity android:name="com.example.android.procnect.BankUpdateActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.android.procnect.ProfileActivity"/>
+    </application>
+</manifest>

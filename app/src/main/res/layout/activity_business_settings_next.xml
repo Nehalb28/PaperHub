@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.procnect.ProfileActivity">
+
+    <TextView
+        android:id="@+id/tv_gsm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/white_grey"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/hint_gsmRange"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_gsm_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white_grey"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/text_min_gsm"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_gsm"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gsm"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_mingsm" />
+
+    <Spinner
+        android:id="@+id/sp_mingsm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="30dp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:backgroundTint="@color/colorAccent"
+        android:popupBackground="@color/colorAccent"
+        android:dropDownSelector="@color/colorAccent"
+        android:entries="@array/gsm_list"
+        android:prompt="@string/gsm_prompt"
+        app:layout_constraintLeft_toRightOf="@+id/tv_gsm_min"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gsm" />
+
+    <TextView
+        android:id="@+id/tv_gsm_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/white_grey"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/text_max_gsm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gsm_min"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_maxgsm" />
+
+    <Spinner
+        android:id="@+id/sp_maxgsm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:backgroundTint="@color/colorAccent"
+        android:popupBackground="@color/colorAccent"
+        android:dropDownSelector="@color/colorAccent"
+        android:entries="@array/gsm_list"
+        android:prompt="@string/gsm_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/sp_mingsm"
+        app:layout_constraintLeft_toLeftOf="@+id/sp_mingsm" />
+
+    <TextView
+        android:id="@+id/tv_insurance_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white_grey"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/text_insurance_text"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gsm_max" />
+
+    <EditText
+        android:id="@+id/et_insurance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white_grey"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorAccent"
+        android:hint="@string/text_insurance"
+        android:textColorHint="@color/white_grey"
+        android:drawableStart="@drawable/ic_check_circle_white_24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_insurance_text" />
+
+    <TextView
+        android:id="@+id/tv_credit_days_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/text_credit_days_text"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/et_insurance"
+        app:layout_constraintTop_toBottomOf="@+id/et_insurance" />
+
+    <TextView
+        android:id="@+id/tv_credit_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/text_credit_days"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/et_insurance"
+        app:layout_constraintTop_toBottomOf="@+id/tv_credit_days_text" />
+
+
+    <Spinner
+        android:id="@+id/sp_payment_terms"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:backgroundTint="@color/colorAccent"
+        android:popupBackground="@color/colorAccent"
+        android:dropDownSelector="@color/colorAccent"
+        android:entries="@array/credit_days_list"
+        app:layout_constraintStart_toStartOf="@+id/sp_mingsm"
+        app:layout_constraintTop_toBottomOf="@+id/tv_credit_days_text" />
+
+    <Button
+        android:id="@+id/bSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/button_submit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:background="@drawable/loginbutton_selector"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_gsm"
+        app:layout_constraintRight_toRightOf="@+id/tv_gsm"
+        app:layout_constraintTop_toBottomOf="@+id/tv_credit_days" />
+
+</android.support.constraint.ConstraintLayout>

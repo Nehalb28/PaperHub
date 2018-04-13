@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="1dp"
+    card_view:contentPadding="10dp"
+    card_view:cardMaxElevation="2dp"
+    card_view:cardUseCompatPadding="true">
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_orderid_text"
+            style="@style/AppTheme"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/hint_orderid"
+            card_view:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_orderid"
+            style="@style/AppTheme"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/hint_orderid"
+            card_view:layout_constraintLeft_toRightOf="@+id/tv_orderid_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_salecompany_text"
+            style="@style/AppTheme"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/text_sale_company"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_orderid"
+            card_view:layout_constraintLeft_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_salecompany"
+            style="@style/AppTheme"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/text_sale_company"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_orderid"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_orderid"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_bf_text"
+            style="@style/AppTheme"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/hint_BF2"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_salecompany_text"
+            card_view:layout_constraintLeft_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_bf"
+            style="@style/AppTheme"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/hint_BF2"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_salecompany"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_salecompany"/>
+
+
+</android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/tv_bf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:backgroundTint="@color/white_grey"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/hint_bf_price"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/cb_bf14"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:buttonTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="@string/hint_14BF"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bf" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_price_bf14"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/white_grey"
+        android:hint="@string/hint_price"
+        android:drawableStart="@drawable/ic_rupee_white_18dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/cb_bf14"
+        app:layout_constraintTop_toTopOf="@+id/cb_bf14"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_bf14" />
+
+    <CheckBox
+        android:id="@+id/cb_bf16"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:buttonTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="@string/hint_16BF"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bf14" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_price_bf16"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/white_grey"
+        android:hint="@string/hint_price"
+        android:drawableStart="@drawable/ic_rupee_white_18dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/cb_bf16"
+        app:layout_constraintTop_toTopOf="@+id/cb_bf16"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_bf16" />
+
+    <CheckBox
+        android:id="@+id/cb_bf18"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:buttonTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="@string/hint_18BF"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bf16" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_price_bf18"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/white_grey"
+        android:hint="@string/hint_price"
+        android:drawableStart="@drawable/ic_rupee_white_18dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/cb_bf18"
+        app:layout_constraintTop_toTopOf="@+id/cb_bf18"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_bf18" />
+
+    <CheckBox
+        android:id="@+id/cb_bf20"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:buttonTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="@string/hint_20BF"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bf18" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_price_bf20"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/white_grey"
+        android:hint="@string/hint_price"
+        android:drawableStart="@drawable/ic_rupee_white_18dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/cb_bf20"
+        app:layout_constraintTop_toTopOf="@+id/cb_bf20"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_bf20" />
+
+    <CheckBox
+        android:id="@+id/cb_bf22"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:buttonTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="@string/hint_22BF"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bf20" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_price_bf22"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/white_grey"
+        android:hint="@string/hint_price"
+        android:drawableStart="@drawable/ic_rupee_white_18dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/cb_bf22"
+        app:layout_constraintTop_toTopOf="@+id/cb_bf22"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_bf22"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_bf25"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:buttonTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="@string/hint_25BF"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bf22" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_price_bf25"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/white_grey"
+        android:hint="@string/hint_price"
+        android:drawableStart="@drawable/ic_rupee_white_18dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/cb_bf25"
+        app:layout_constraintTop_toTopOf="@+id/cb_bf25"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_bf25" />
+
+    <CheckBox
+        android:id="@+id/cb_bf28"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:buttonTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="@string/hint_28BF"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bf25" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_price_bf28"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/white_grey"
+        android:hint="@string/hint_price"
+        android:drawableStart="@drawable/ic_rupee_white_18dp"
+        android:drawablePadding="8dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/cb_bf28"
+        app:layout_constraintTop_toTopOf="@+id/cb_bf28"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_bf28"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_bf30"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:buttonTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="@string/hint_30BF"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bf28" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_price_bf30"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/white_grey"
+        android:hint="@string/hint_price"
+        android:drawableStart="@drawable/ic_rupee_white_18dp"
+        android:drawablePadding="8dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/cb_bf30"
+        app:layout_constraintTop_toTopOf="@+id/cb_bf30"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_bf30"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_bf32"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:buttonTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="@string/hint_32BF"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bf30" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_price_bf32"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/white_grey"
+        android:hint="@string/hint_price"
+        android:drawableStart="@drawable/ic_rupee_white_18dp"
+        android:drawablePadding="8dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/cb_bf32"
+        app:layout_constraintTop_toTopOf="@+id/cb_bf32"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_bf32" />
+
+    <CheckBox
+        android:id="@+id/cb_bf35"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:buttonTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:text="@string/hint_35BF"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bf32" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_price_bf35"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/white_grey"
+        android:hint="@string/hint_price"
+        android:drawableStart="@drawable/ic_rupee_white_18dp"
+        android:drawablePadding="8dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/cb_bf35"
+        app:layout_constraintTop_toTopOf="@+id/cb_bf35"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_bf32" />
+
+    <Button
+        android:id="@+id/bNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/button_next"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:background="@drawable/loginbutton_selector"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_bf"
+        app:layout_constraintRight_toRightOf="@+id/tv_bf"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bf35" />
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

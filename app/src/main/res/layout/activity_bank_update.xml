@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_bankdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/text_bankdetails"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_bankname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/text_bankname"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_bankdetails"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bankdetails" />
+
+    <Spinner
+        android:id="@+id/sp_bankname_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:backgroundTint="@color/colorAccent"
+        android:popupBackground="@color/colorAccent"
+        android:dropDownSelector="@color/colorAccent"
+        android:entries="@array/bankname_list"
+        app:layout_constraintStart_toEndOf="@+id/tv_bankname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bankdetails" />
+
+    <EditText
+        android:id="@+id/et_bank_account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="18"
+        android:drawableStart="@drawable/ic_check_circle_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/text_bank_account_name"
+        android:textColorHint="@color/white_grey"
+        android:inputType="textPostalAddress"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_bankdetails"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bankname" />
+
+    <EditText
+        android:id="@+id/et_bank_account_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="18"
+        android:drawableStart="@drawable/ic_check_circle_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/text_bank_account_number"
+        android:textColorHint="@color/white_grey"
+        android:inputType="number"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_bankname"
+        app:layout_constraintTop_toBottomOf="@+id/et_bank_account_name" />
+
+    <EditText
+        android:id="@+id/et_bank_ifsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="18"
+        android:drawableStart="@drawable/ic_check_circle_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/text_bank_ifsc"
+        android:textColorHint="@color/white_grey"
+        android:inputType="textCapCharacters"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/et_bank_account_number"
+        app:layout_constraintTop_toBottomOf="@+id/et_bank_account_number" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        style="@style/AppTheme"
+        app:layout_constraintTop_toBottomOf="@+id/button_update"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/et_bank_account_number"
+        app:layout_constraintStart_toStartOf="@+id/et_bank_account_number" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:background="@drawable/loginbutton_selector"
+        android:text="@string/button_submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_bank_ifsc"/>
+
+</android.support.constraint.ConstraintLayout>

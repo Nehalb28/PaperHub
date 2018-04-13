@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.procnect.ProfileActivity">
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        style="@style/AppTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+        app:layout_constraintRight_toRightOf="@+id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white_grey"
+        android:drawableStart="@drawable/ic_business_white_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tv_gstin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_dialpad_white_24dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_phone_white_24dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gstin"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_location_on_white_24dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_email_white_24dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/tv_vendortype"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_work_white_24dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+    <TextView
+        android:id="@+id/tv_bankname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:hint="@string/text_bankname"
+        android:drawableStart="@drawable/ic_check_circle_white_24dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vendortype" />
+
+    <TextView
+        android:id="@+id/tv_bank_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:hint="@string/text_bank_account_number"
+        android:drawableStart="@drawable/ic_check_circle_white_24dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bankname" />
+
+    <TextView
+        android:id="@+id/tv_bank_ifsc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:hint="@string/text_bank_ifsc"
+        android:drawableStart="@drawable/ic_check_circle_white_24dp"
+        android:drawablePadding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bank_account" />
+
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:background="@drawable/loginbutton_selector"
+        android:text="@string/button_bank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bank_ifsc"/>
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="1dp"
+    card_view:contentPadding="10dp"
+    card_view:cardMaxElevation="2dp"
+    card_view:cardUseCompatPadding="true">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/AppTheme">
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_listitemimage"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintLeft_toLeftOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintRight_toLeftOf="@+id/tv_listitemname"
+        card_view:layout_constraintEnd_toStartOf="@+id/tv_listitemname"
+        android:contentDescription="@string/text_home"
+        android:src="@mipmap/ic_launcher_round"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_listitemname"
+        style="@style/AppTheme"
+        android:padding="2dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/hint_name"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintLeft_toLeftOf="parent"/>
+        <!--card_view:layout_constraintLeft_toLeftOf="@+id/tv_listitemimage"
+        card_view:layout_constraintStart_toEndOf="@+id/tv_listitemimage"-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_gsm_range"
+        style="@style/AppTheme"
+        card_view:layout_constraintTop_toBottomOf="@+id/tv_listitemname"
+        card_view:layout_constraintStart_toStartOf="@+id/tv_listitemname"
+        card_view:layout_constraintLeft_toLeftOf="@+id/tv_listitemname"
+        android:gravity="center"
+        android:padding="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/hint_gsm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_gsm_min"
+        style="@style/AppTheme"
+        card_view:layout_constraintTop_toBottomOf="@+id/tv_listitemname"
+        card_view:layout_constraintStart_toEndOf="@+id/tv_gsm_range"
+        android:gravity="center"
+        android:padding="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/text_min_gsm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_to"
+        style="@style/AppTheme"
+        card_view:layout_constraintTop_toBottomOf="@+id/tv_listitemname"
+        card_view:layout_constraintStart_toEndOf="@+id/tv_gsm_min"
+        android:gravity="center"
+        android:padding="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/hint_to" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_gsm_max"
+        style="@style/AppTheme"
+        card_view:layout_constraintTop_toBottomOf="@+id/tv_listitemname"
+        card_view:layout_constraintStart_toEndOf="@+id/tv_to"
+        android:gravity="center"
+        android:padding="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/text_max_gsm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_location"
+        style="@style/AppTheme"
+        card_view:layout_constraintTop_toBottomOf="@+id/tv_gsm_range"
+        card_view:layout_constraintStart_toStartOf="@+id/tv_listitemname"
+        card_view:layout_constraintLeft_toLeftOf="@+id/tv_listitemname"
+        android:gravity="center"
+        android:padding="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/hint_location" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_listitempbf14"
+        style="@style/AppTheme"
+        card_view:layout_constraintTop_toBottomOf="@+id/tv_location"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintRight_toRightOf="parent"
+        android:drawableStart="@drawable/ic_rupee_black_24dp"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/price" />
+
+
+</android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

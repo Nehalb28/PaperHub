@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    tools:context="com.example.android.procnect.RegisterActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/white_grey"
+        android:textColorHint="@color/white_grey"
+        android:drawableStart="@drawable/ic_business_white_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/hint_location"
+        android:inputType="textAutoComplete"
+        android:singleLine="true"
+        android:completionThreshold="1"
+        android:imeOptions="actionNext"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/white_grey"
+        android:drawableStart="@drawable/ic_location_on_white_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/white_grey"
+        android:drawableStart="@drawable/ic_email_white_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLocation"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/hint_password"
+        android:inputType="textWebPassword"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/white_grey"
+        android:drawableStart="@drawable/ic_lock_open_white_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@+id/etEmail"
+        app:layout_constraintRight_toRightOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <RadioGroup
+        android:id="@+id/spVendortype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="2dp"
+        app:layout_constraintLeft_toLeftOf="@+id/etPassword"
+        app:layout_constraintRight_toRightOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword">
+
+        <RadioButton
+            android:id="@+id/rb_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:text="@string/rb_button1" />
+
+        <RadioButton
+            android:id="@+id/rb_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:checked="true"
+            android:text="@string/rb_button2" />
+
+        <RadioButton
+            android:id="@+id/rb_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:checked="true"
+            android:text="@string/rb_button3" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/hint_phone"
+        android:inputType="phone"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/white_grey"
+        android:drawableStart="@drawable/ic_phone_white_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spVendortype" />
+
+
+    <EditText
+        android:id="@+id/etGst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/hint_gstin"
+        android:inputType="textCapCharacters"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/white_grey"
+        android:drawableStart="@drawable/ic_dialpad_white_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/hint_address"
+        android:inputType="textPostalAddress"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/white_grey"
+        android:drawableStart="@drawable/ic_store_white_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGst" />
+
+
+    <TextView
+        android:id="@+id/tvQues1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/hint_SecurityQuestions"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/white_grey"
+        android:drawablePadding="8dp"
+        android:paddingStart="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingEnd="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="16sp"
+        android:padding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress">
+    </TextView>
+
+    <EditText
+        android:id="@+id/etQues1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="@string/hint_Ques1"
+        android:inputType="text"
+        android:backgroundTint="@color/white_grey"
+        android:drawableStart="@drawable/ic_check_circle_white_24dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/white_grey"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvQues1"
+        app:layout_constraintRight_toRightOf="@+id/tvQues1"
+        app:layout_constraintTop_toBottomOf="@+id/tvQues1">
+    </EditText>
+
+    <EditText
+        android:id="@+id/etQues2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="@string/hint_Ques2"
+        android:inputType="text"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/white_grey"
+        android:drawableStart="@drawable/ic_check_circle_white_24dp"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@+id/etQues1"
+        app:layout_constraintRight_toRightOf="@+id/etQues1"
+        app:layout_constraintTop_toBottomOf="@+id/etQues1">
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/cb_terms_conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/terms_conditions"
+        android:textColor="@color/colorAccent"
+        android:buttonTint="@color/colorAccent"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/etQues2"
+        app:layout_constraintRight_toRightOf="@+id/etQues2"
+        app:layout_constraintTop_toBottomOf="@+id/etQues2" />
+
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_register"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:background="@drawable/loginbutton_selector"
+        app:layout_constraintLeft_toLeftOf="@+id/spVendortype"
+        app:layout_constraintRight_toRightOf="@+id/spVendortype"
+        app:layout_constraintTop_toBottomOf="@+id/cb_terms_conditions" />
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

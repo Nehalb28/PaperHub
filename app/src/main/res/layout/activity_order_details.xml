@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_salecompany_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:text="@string/text_sale_company"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_salecompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="100dp"
+        android:textSize="16sp"
+        android:text="@string/text_sale_company"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_salecompany_text"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_orderid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:text="@string/hint_orderid"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_salecompany_text"/>
+
+    <TextView
+        android:id="@+id/tv_orderid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:text="@string/hint_orderid"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_salecompany"
+        app:layout_constraintTop_toBottomOf="@+id/tv_salecompany"/>
+
+    <TextView
+        android:id="@+id/tv_bf_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:text="@string/hint_BF2"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_orderid"/>
+
+    <TextView
+        android:id="@+id/tv_bf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:text="@string/hint_BF2"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_salecompany"
+        app:layout_constraintTop_toBottomOf="@+id/tv_orderid_text"/>
+
+    <TextView
+        android:id="@+id/tv_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:text="@string/hint_price2"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bf_text"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_rupee_white_18dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:text="@string/hint_price2"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_salecompany"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bf"/>
+
+
+    <TextView
+        android:id="@+id/tv_orderstatus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:text="@string/text_orderstatus"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_text"/>
+
+    <TextView
+        android:id="@+id/tv_orderstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:text="@string/text_orderstatus"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_salecompany"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price"/>
+
+    <TextView
+        android:id="@+id/tv_payment_terms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:text="@string/text_credit_days"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_orderstatus"/>
+
+    <TextView
+        android:id="@+id/tv_payment_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:text="@string/text_credit_days"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_salecompany"
+        app:layout_constraintTop_toBottomOf="@+id/tv_orderstatus"/>
+
+    <TextView
+        android:id="@+id/tv_gsm_in1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_space_bar_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_gsm"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_payment_terms_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_payment_terms_text" />
+
+    <TextView
+        android:id="@+id/tv_width1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/ic_linear_scale_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_width"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_gsm_in1"
+        app:layout_constraintBottom_toBottomOf="@id/tv_gsm_in1"/>
+
+
+    <TextView
+        android:id="@+id/tv_quantity1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/ic_bubble_chart_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_quantity"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_width1"
+        app:layout_constraintBottom_toBottomOf="@id/tv_width1"/>
+
+    <TextView
+        android:id="@+id/tv_gsm_in2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_space_bar_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_gsm"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_gsm_in1"
+        app:layout_constraintTop_toBottomOf="@id/tv_gsm_in1" />
+
+    <TextView
+        android:id="@+id/tv_width2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_linear_scale_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_width"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_gsm_in2"
+        app:layout_constraintBottom_toBottomOf="@id/tv_gsm_in2"/>
+
+
+    <TextView
+        android:id="@+id/tv_quantity2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_bubble_chart_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_quantity"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_width2"
+        app:layout_constraintBottom_toBottomOf="@id/tv_width2"/>
+
+    <TextView
+        android:id="@+id/tv_gsm_in3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_space_bar_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_gsm"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_gsm_in2"
+        app:layout_constraintTop_toBottomOf="@id/tv_gsm_in2" />
+
+    <TextView
+        android:id="@+id/tv_width3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_linear_scale_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_width"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_gsm_in3"
+        app:layout_constraintBottom_toBottomOf="@id/tv_gsm_in3"/>
+
+
+    <TextView
+        android:id="@+id/tv_quantity3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_bubble_chart_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_quantity"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_width3"
+        app:layout_constraintBottom_toBottomOf="@id/tv_width3"/>
+
+    <TextView
+        android:id="@+id/tv_gsm_in4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_space_bar_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_gsm"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_gsm_in3"
+        app:layout_constraintTop_toBottomOf="@id/tv_gsm_in3" />
+
+    <TextView
+        android:id="@+id/tv_width4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_linear_scale_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_width"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_gsm_in4"
+        app:layout_constraintBottom_toBottomOf="@id/tv_gsm_in4"/>
+
+
+    <TextView
+        android:id="@+id/tv_quantity4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_bubble_chart_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_quantity"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_width4"
+        app:layout_constraintBottom_toBottomOf="@id/tv_width4"/>
+
+    <TextView
+        android:id="@+id/tv_gsm_in5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_space_bar_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_gsm"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_gsm_in4"
+        app:layout_constraintTop_toBottomOf="@id/tv_gsm_in4" />
+
+    <TextView
+        android:id="@+id/tv_width5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_linear_scale_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_width"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_gsm_in5"
+        app:layout_constraintBottom_toBottomOf="@id/tv_gsm_in5"/>
+
+
+    <TextView
+        android:id="@+id/tv_quantity5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_bubble_chart_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_quantity"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_width5"
+        app:layout_constraintBottom_toBottomOf="@id/tv_width5"/>
+
+    <TextView
+        android:id="@+id/tv_gsm_in6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_space_bar_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_gsm"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_gsm_in5"
+        app:layout_constraintTop_toBottomOf="@id/tv_gsm_in5" />
+
+    <TextView
+        android:id="@+id/tv_width6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_linear_scale_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_width"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_gsm_in6"
+        app:layout_constraintBottom_toBottomOf="@id/tv_gsm_in6"/>
+
+
+    <TextView
+        android:id="@+id/tv_quantity6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_bubble_chart_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_quantity"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_width6"
+        app:layout_constraintBottom_toBottomOf="@id/tv_width6"/>
+
+    <TextView
+        android:id="@+id/tv_gsm_in7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_space_bar_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_gsm"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_gsm_in6"
+        app:layout_constraintTop_toBottomOf="@id/tv_gsm_in6" />
+
+    <TextView
+        android:id="@+id/tv_width7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_linear_scale_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_width"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_gsm_in7"
+        app:layout_constraintBottom_toBottomOf="@id/tv_gsm_in7"/>
+
+
+    <TextView
+        android:id="@+id/tv_quantity7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_bubble_chart_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_quantity"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_width7"
+        app:layout_constraintBottom_toBottomOf="@id/tv_width7"/>
+
+    <TextView
+        android:id="@+id/tv_gsm_in8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_space_bar_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_gsm"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_gsm_in7"
+        app:layout_constraintTop_toBottomOf="@id/tv_gsm_in7" />
+
+    <TextView
+        android:id="@+id/tv_width8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_linear_scale_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_width"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_gsm_in8"
+        app:layout_constraintBottom_toBottomOf="@id/tv_gsm_in8"/>
+
+
+    <TextView
+        android:id="@+id/tv_quantity8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_bubble_chart_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_quantity"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_width8"
+        app:layout_constraintBottom_toBottomOf="@id/tv_width8"/>
+
+    <TextView
+        android:id="@+id/tv_gsm_in9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_space_bar_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_gsm"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_gsm_in8"
+        app:layout_constraintTop_toBottomOf="@id/tv_gsm_in8" />
+
+    <TextView
+        android:id="@+id/tv_width9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_linear_scale_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_width"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_gsm_in9"
+        app:layout_constraintBottom_toBottomOf="@id/tv_gsm_in9"/>
+
+
+    <TextView
+        android:id="@+id/tv_quantity9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_bubble_chart_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_quantity"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_width9"
+        app:layout_constraintBottom_toBottomOf="@id/tv_width9"/>
+
+    <TextView
+        android:id="@+id/tv_gsm_in10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_space_bar_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_gsm"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/tv_gsm_in9"
+        app:layout_constraintTop_toBottomOf="@id/tv_gsm_in9" />
+
+    <TextView
+        android:id="@+id/tv_width10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_linear_scale_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_width"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_gsm_in10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_gsm_in10"/>
+
+
+    <TextView
+        android:id="@+id/tv_quantity10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_bubble_chart_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:hint="@string/hint_quantity"
+        android:textColorHint="@color/white_grey"
+        android:backgroundTint="@color/white_grey"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/tv_width10"
+        app:layout_constraintBottom_toBottomOf="@id/tv_width10"/>
+
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:background="@drawable/loginbutton_selector"
+        android:text="@string/text_confirm"
+        app:layout_constraintStart_toStartOf="@+id/tv_gsm_in10"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gsm_in10"/>
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
